@@ -1,10 +1,12 @@
 from django.shortcuts import render
 import requests
 from bs4 import BeautifulSoup as bs
-from django.core.paginator import Paginator
+# from django.core.paginator import Paginator
+from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
+    return HttpResponse("<h1>Hello</h1>")
     category=""
     location=""
     print("showing....")
